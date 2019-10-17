@@ -1,1 +1,18 @@
 # High-Sugar
+
+SUGAR HIGHT DESCRIPTION
+
+I split the program in a different packages 
+--- interfaces - where are the interfaces for our classes (used for bigger abstraction and easier changes later on in the program)
+--- io - where are the classes for the input and output (ConsoleReader and ConsoleWriter) 
+--- logic - where are main logic is with class Engine
+--- and a class Main 
+The main logic is also explained in the class Engine
+1. We read from the console array of strings, than we split it (by regex), filter the empty entries,
+   map each element, parse it to integer and collect it in a List - which allow us more functionality later on.
+2. Read the next integet - threshold
+3. Create a new Arr so we can coppy the List than sort it ascending
+4. Create a new List which we will use it to store the indices of each candy we can eat
+5. Iterate true the sorted array, add its value in a sum and if its lower than our threshold we add its indice,
+when we reach the limit we break the loop (no need of extra iterations);
+6.Sort the new List than Join it by  ", " and print it on the console.
