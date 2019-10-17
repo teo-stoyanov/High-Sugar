@@ -8,7 +8,7 @@ I split the program in a different packages
 --- logic - where are main logic is with class Engine
 --- and a class Main 
 The main logic is also explained in the class Engine
-1. We read from the console array of strings, than we split it (by regex), filter the empty entries,
+1. We read from the console array of strings, than we split it by regex (expected input [a1, a2, a3, ...]), filter the empty entries,
    map each element, parse it to integer and collect it in a List - which allow us more functionality later on.
 2. Read the next integet - threshold
 3. Create a new Arr so we can coppy the List than sort it ascending
